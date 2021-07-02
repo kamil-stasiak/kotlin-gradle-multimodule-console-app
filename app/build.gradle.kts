@@ -6,12 +6,18 @@
  * User Manual available at https://docs.gradle.org/7.0/userguide/building_java_projects.html
  */
 
+
+application {
+    mainClass.set("me.stasiak.AppKt")
+}
+
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.4.31"
 
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 repositories {
@@ -36,9 +42,4 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 
     implementation(project(":library"))
-}
-
-application {
-    // Define the main class for the application.
-    mainClass.set("me.stasiak.AppKt")
 }

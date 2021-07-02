@@ -10,5 +10,6 @@
 rootProject.name = "kotlin-example-project"
 include(
     "app",
-    "library"
+    "library",
+    "spring"
 )
