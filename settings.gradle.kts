@@ -11,5 +11,11 @@ rootProject.name = "kotlin-example-project"
 include(
     "app",
     "library",
-    "spring"
+    "spring",
+
+    "advent-of-code-2020-1",
+    "kotlin-delegates",
+    "kotlin-pattern-matching",
+
+    "utils",
 )
