@@ -14,6 +14,7 @@ include(
     "spring",
 
     "advent-of-code-2020-1",
+    "advent-of-code-2020-2",
     "kotlin-delegates",
     "kotlin-pattern-matching",
 
