@@ -15,6 +15,7 @@ include(
 
     "advent-of-code-2020-1",
     "advent-of-code-2020-2",
+    "advent-of-code-2020-3",
     "kotlin-delegates",
     "kotlin-pattern-matching",
 
