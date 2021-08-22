@@ -65,6 +65,14 @@ class Board(raw: List<String>) {
     }
 }
 
+// also worked
+class Board2(private val raw: List<String>) {
+    fun countTrees(stepX: Int, stepY: Int): BigInteger = raw.withIndex()
+        .filter { (index, _) -> index % stepY == 0 } // y step
+        .count { (index, row) -> row[(index / stepY) * stepX % raw[0].length] == '#' }
+        .toBigInteger()
+}
+
 class ExerciseTest {
     private val exampleInput = """
             ..##.......
