@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "9324ac6af302ba36",
+    "type": "split",
+    "children": [
+      {
+        "id": "d22689cf4a893334",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Second child note.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8858937182489d5d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f6fbba20a28277c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfa39c39b41dd9dd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f71a282bf6875adf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f3334ff8950bfa94",
+    "type": "split",
+    "children": [
+      {
+        "id": "78a379ac05e03a3f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05623f6b0513c2b1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Second child note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d22689cf4a893334",
+  "lastOpenFiles": [
+    "Second child note.md",
+    "Parent Note.md",
+    "First level child.md",
+    "Second level child.md",
+    "Untitled.md"
+  ]
+}

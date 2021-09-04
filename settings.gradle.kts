@@ -19,5 +19,7 @@ include(
     "kotlin-delegates",
     "kotlin-pattern-matching",
 
+    "kotlin-obsidian-graph",
+
     "utils",
 )
