@@ -1,6 +1,6 @@
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.4.31"
+    id("org.jetbrains.kotlin.jvm") version "1.5.30"
 
     `java-library`
 }
@@ -27,8 +27,4 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 
 
-    implementation(group = "org.jgrapht", name = "jgrapht-core", version = "1.5.1")
-    implementation(group = "org.jgrapht", name = "jgrapht-ext", version = "1.5.1")
-    implementation(group = "com.beust", name = "klaxon", version = "5.5")
-    implementation(kotlin("script-runtime"))
 }

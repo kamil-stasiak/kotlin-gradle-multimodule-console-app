@@ -1,5 +1,6 @@
 package me.stasiak
 
+import com.beust.klaxon.Klaxon
 import com.mxgraph.layout.mxCircleLayout
 import com.mxgraph.layout.mxIGraphLayout
 import com.mxgraph.util.mxCellRenderer
@@ -27,6 +28,24 @@ data class NoteVertex(
     }
 }
 
+data class D3(
+    val nodes: List<D3Node>,
+    val links: List<D3Link>
+)
+
+data class D3Link(
+    val source: Int,
+    val target: Int,
+)
+
+
+data class D3Node(
+    val id: Int,
+    val name: String,
+)
+
+// network graph
+// https://www.d3-graph-gallery.com/network.html
 fun main() {
     val graph: Graph<NoteVertex, DefaultEdge> = DefaultDirectedGraph(DefaultEdge::class.java)
 
@@ -74,7 +93,25 @@ fun main() {
         .forEach { println(it.path) }
 
 
-    writeImageToFile(graph)
+    val nodes = graph.vertexSet()
+        .mapIndexed { index, vertex ->
+            D3Node(id = index, name = vertex.relativePath)
+        }
+    val links = graph.edgeSet()
+        .map { edge ->
+            D3Link(
+                source = nodes
+                    .find { node -> node.name == graph.getEdgeSource(edge).relativePath }
+                    ?.id!!,
+                target = nodes
+                    .find { node -> node.name == graph.getEdgeTarget(edge).relativePath }
+                    ?.id!!
+            )
+        }
+
+    println(Klaxon().toJsonString(D3(nodes = nodes, links = links)))
+
+    // writeImageToFile(graph)
 }
 
 private fun writeImageToFile(graph: Graph<NoteVertex, DefaultEdge>) {
