@@ -2,12 +2,12 @@ plugins {
     id("org.springframework.boot") version "2.4.5"
 
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.4.31"
+    id("org.jetbrains.kotlin.jvm") version "1.5.31"
 
     application
 
 //    kotlin("jvm")
-//    kotlin("plugin.spring") version "1.4.31"
+//    kotlin("plugin.spring") version "1.5.31"
 
 
     id("org.jetbrains.kotlin.plugin.allopen") version "1.5.20"

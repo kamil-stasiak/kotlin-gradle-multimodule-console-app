@@ -8,20 +8,22 @@
  */
 
 rootProject.name = "kotlin-example-project"
+
 include(
     "app",
     "library",
     "spring",
 
-    "advent-of-code-2020-1",
-    "advent-of-code-2020-2",
-    "advent-of-code-2020-3",
-    "advent-of-code-2020-4",
+    "advent-of-code:2020:1",
+    "advent-of-code:2020:2",
+    "advent-of-code:2020:3",
+    "advent-of-code:2020:4",
 
     "kotlin-delegates",
     "kotlin-pattern-matching",
 
     "kotlin-obsidian-graph",
+    "arrow",
 
     "utils",
 )

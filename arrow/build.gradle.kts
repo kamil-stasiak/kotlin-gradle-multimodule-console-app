@@ -14,6 +14,7 @@ dependencies {
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 
+
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
@@ -26,9 +27,12 @@ dependencies {
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 
+    // --- custom
+    //
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 
-    implementation(group = "org.jgrapht", name = "jgrapht-core", version = "1.5.1")
-    implementation(group = "org.jgrapht", name = "jgrapht-ext", version = "1.5.1")
-    implementation(group = "com.beust", name = "klaxon", version = "5.5")
-    implementation(kotlin("script-runtime"))
+    // Bom file - zawiera wszystkie wersje
+    implementation(platform("io.arrow-kt:arrow-stack:1.0.1"))
+
+    implementation("io.arrow-kt:arrow-core")
 }
